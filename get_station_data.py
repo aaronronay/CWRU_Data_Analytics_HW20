@@ -1,6 +1,7 @@
 #station data extraction
 
-import os
+#dependencies
+import os 
 import os.path
 import time
 import csv
@@ -8,7 +9,8 @@ import numpy
 from datetime import datetime
 import pandas as pd
 import numpy as np
-os.chdir("C:/Users/Aaron/Desktop/HW20_tableau/Citibike_Data")
+os.chdir("C:/Users/Aaron/Desktop/HW20_tableau/Citibike_Data") 
+#point to file and read
 new = os.getcwd().replace("\\","/")
 filepaths = []
 for dirpath, dirnames, filenames in os.walk(new):
